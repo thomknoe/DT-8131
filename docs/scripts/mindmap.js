@@ -369,7 +369,9 @@ Y,Urban,""
   // Init
   //
   (async function init() {
-    let nodes = await loadCSV("/scripts/data/mindmap.csv");
+    let nodes = await loadCSV(
+      "//thomknoe.github.io/DT-8131/scripts/data/mindmap.csv"
+    );
     if (!nodes) nodes = parseCSV(fallbackCSV);
     buildTree(nodes);
     animate();
