@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>hello.world — on interactive narrative</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="icon" type="image/png" href="/public/favicon.png" sizes="32x32">
+</head>
+
+<body>
+    <!-- dot-grid overlay -->
+    <div class="dot-grid" aria-hidden="true"></div>
+
+    <!-- background canvas (three.js terrain) -->
+    <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+    <!-- navigation (same as index) -->
+    <nav class="nav-container" role="navigation" aria-label="primary">
+        <ul class="nav-links">
+            <li><a href="/index.html">home</a></li>
+            <li><a href="/index.html#about">about</a></li>
+            <li><a href="/index.html#blog">blog</a></li>
+            <li><a href="/index.html#team">team</a></li>
+            <li>
+                <div class="download-btn-container">
+                    <button class="download-btn" disabled>downloads</button>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- main blog content -->
+    <main>
+        <article class="blog-article content-card">
+            <!-- blog title -->
+            <h1 class="blog-entry-title">on interactive narrative</h1>
+            <div class="blog-meta">research update: 09/11/2025</div>
+
+            <!-- blog body -->
+            <p>
+                When we set out to design our sandbox storytelling game, we knew interaction had to be more than
+                mechanics; it had to be a way of making stories feel alive. We wanted players to not only build worlds,
+                but also to observe, shape, and live through the dramas that unfold inside them. Our vision of
+                interaction draws inspiration from a wide range of games across genres, each teaching us something
+                unique about how people and worlds connect.
+            </p>
+
+            <!-- image with caption -->
+            <figure class="blog-figure">
+                <img src="/blog/9-11-25/Sims.jpg" alt="The Sims" />
+                <figcaption>The Sims, Maxis EA (2000)</figcaption>
+            </figure>
+
+            <p>
+                We are fascinated by simulations where everyday actions, such as eating working, and making friends,
+                slowly evolve into complex narratives. These showed us that real interaction lies not in grand events
+                but in small details. That’s why we want players to not only build spaces but also observe the
+                micro-actions that give rise to living stories.
+            </p>
+
+            <!-- image with caption -->
+            <figure class="blog-figure">
+                <img src="/blog/9-11-25/Minecraft.jpg" alt="Minecraft" />
+                <figcaption>Minecraft, Mojang Studios (2009)</figcaption>
+            </figure>
+
+            <p>
+                Some sandbox experiences taught us that when players are given full freedom, they are not just building
+                stages, but breathing worlds. We want to extend this same sense of possibility: giving players as much
+                freedom as possible, and letting unexpected stories emerge from their creations.
+            </p>
+
+            <!-- image with caption -->
+            <figure class="blog-figure">
+                <img src="/blog/9-11-25/Spore.jpg" alt="Spore" />
+                <figcaption>Spore, Maxis EA (2000)</figcaption>
+            </figure>
+            <p>
+
+                We are inspired by games that move between scales; tracking individual growth on one hand, and
+                collective evolution on the other. We aim to create a system where players can focus both on individual
+                psychology and on the broader rules of society. The interplay between small choices and large systems
+                will be central to our vision.
+            </p>
+
+            <!-- image with caption -->
+            <figure class="blog-figure">
+                <img src="/blog/9-11-25/Fortress.jpg" alt="Dwarf Fortress" />
+                <figcaption>Dwarf Fortress, Bay 12 Games (2006)</figcaption>
+
+            </figure>
+            <p>
+
+            <p>
+                Character creation also inspires us deeply. We admire systems that allow for open, inclusive
+                self-expression, where anyone can see themselves reflected. In our game, multiple identities and
+                narratives will coexist, making room for players to create characters across diverse genders, bodies,
+                and cultures.
+
+            </p>
+
+            <!-- image with caption -->
+            <figure class="blog-figure">
+                <img src="/blog/9-11-25/Picrew.jpg" alt="Picrew" />
+                <figcaption>Picrew, TetraChroma (2018)</figcaption>
+
+            </figure>
+
+            <p>
+                Finally, text-based games showed us that words alone can carry entire universes. A single line of
+                dialogue, a branching sentence, can hold just as much weight as visual spectacle. We want to bring this
+                into our sandbox: letting players shape not just spaces, but conversations and relationships, so stories
+                emerge on both structural and narrative levels.
+            </p>
+
+            <!-- image with caption -->
+            <figure class="blog-figure">
+                <img src="/blog/9-11-25/Doki.jpg" alt="Doki Doki Literature Club" />
+                <figcaption>Doki Doki Literature Club, Team Salvato (2017)</figcaption>
+            </figure>
+
+            <p>
+                We want to build a game where creation and observation coexist. A space that combines free construction,
+                detailed simulation, diverse representation, systemic interaction, and narrative branching. We are
+                making this because we believe the most meaningful interactions are the ones where stories happen
+                naturally in the player’s hands.
+            </p>
+
+            <!-- image with caption -->
+            <figure class="blog-figure">
+                <img src="/blog/9-11-25/Sky.jpg" alt="No Man's Sky" />
+                <figcaption>No Man's Sky, Hello Games (2016)</figcaption>
+
+            </figure>
+
+        </article>
+    </main>
+
+    <footer class="content-card footer-card" role="contentinfo">
+        ms design tech @ cornell
+    </footer>
+
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.153.0/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simplex-noise@2.4.0/simplex-noise.js"></script>
+    <script src="/scripts/terrain.js"></script>
+</body>
+
+</html>

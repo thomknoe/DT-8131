@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>hello.world — utopia, distopia, aetopia</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="icon" type="image/png" href="/public/favicon.png" sizes="32x32">
+</head>
+
+<body>
+    <!-- dot-grid overlay -->
+    <div class="dot-grid" aria-hidden="true"></div>
+
+    <!-- background canvas (three.js terrain) -->
+    <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+    <!-- navigation (same as index) -->
+    <nav class="nav-container" role="navigation" aria-label="primary">
+        <ul class="nav-links">
+            <li><a href="/index.html">home</a></li>
+            <li><a href="/index.html#about">about</a></li>
+            <li><a href="/index.html#blog">blog</a></li>
+            <li><a href="/index.html#team">team</a></li>
+            <li>
+                <div class="download-btn-container">
+                    <button class="download-btn" disabled>downloads</button>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- main blog content -->
+    <main>
+        <article class="blog-article content-card">
+            <!-- blog title -->
+            <h1 class="blog-entry-title">utopia, distopia, aetopia</h1>
+            <div class="blog-meta">research update: 09/25/2025</div>
+
+            <!-- blog body -->
+            <p>
+                When building a sandbox for collaborative storytelling, we wanted to go beyond individual characters and
+                plots. We wanted to create a framework where players could experiment with worlds; with societies,
+                ideologies, and environments that shape the lives within them. That is why utopia and dystopia are at
+                the heart of our aesthetic vision.
+            </p>
+            <p>
+                In our sandbox, players can construct their own utopian experiments. These worlds serve both as
+                aspirational blueprints and as provocations. What happens when ideals meet human complexity? Sir Thomas
+                More’s Utopia offered one of the earliest thought experiments in designing a perfect society. His
+                imagined island featured communal property, rational governance, and social harmony. But, it was also a
+                satire, inviting readers to question whether perfection on paper can ever align with the
+                complexities of human life.
+
+            </p>
+
+            <figure class="blog-figure">
+                <img src="/blog/9-25-25/Utopia.jpg" alt="Utopia" />
+                <figcaption>Utopia by Sir Thomas More (1516)</figcaption>
+            </figure>
+
+            <p>
+                Frank Lloyd Wright’s Broadacre City imagined a suburban utopia of decentralized living, where every
+                family had land and technology connected people across distances. It was visionary but also deeply tied
+                to American ideals of property and mobility.
+            </p>
+
+            <figure class="blog-figure">
+                <img src="/blog/9-25-25/Wright.jpg" alt="Frank Loyd Wright" />
+                <figcaption> Broadacre City by Frank Lloyd Wright (1932)</figcaption>
+            </figure>
+
+            <p>
+                The Panopticon, for example, designed by philosopher Jeremy Bentham, was a circular prison where every
+                inmate could be watched by a single guard, an architecture of total visibility and control. Today, it
+                serves as a metaphor for surveillance culture. In our sandbox, players might design a city whose layout
+                enforces obedience, or test what happens when every citizen lives under the gaze of authority.
+            </p>
+
+            <figure class="blog-figure">
+                <img src="/blog/9-25-25/Panopticon.jpg" alt="Panopticon" />
+                <figcaption> The Panopticon by Jeremy Bentham (1791)</figcaption>
+            </figure>
+
+            <p>
+                Novels like George Orwell’s 1984 and Aldous Huxley’s Brave New World showed two dystopias. 1984 imagines
+                totalitarian control through fear, surveillance, and repression, while Brave New World depicts a society
+                lulled into obedience by comfort, pleasure, and distraction. Together, they frame two poles of dystopia:
+                oppression by pain, and oppression by pleasure.
+
+            </p>
+            <figure class="blog-figure">
+                <img src="/blog/9-25-25/1984.jpg" alt="1984" />
+                <figcaption> 1984 by George Orwell (1949)</figcaption>
+            </figure>
+            <p>
+                Similarly, John B. Calhoun’s “mouse utopia” experiments, often called the “Behavioral Sink”, tested what
+                happens when a population of mice lives in a space of abundance but limited structure. The result was
+                chaos: overcrowding, social collapse, and the eventual extinction of the colony.
+            </p>
+
+            <figure class="blog-figure">
+                <img src="/blog/9-25-25/Calhoun.jpg" alt="Calhoun" />
+                <figcaption> Mouse Utopia by John Calhoun (1962)</figcaption>
+            </figure>
+
+            <p>
+                We don’t present utopia and dystopia as opposites, but as two sides of the same coin. Every utopia
+                contains the seeds of dystopia, and every dystopia reflects a distorted dream of order. Could either
+                ever trully exist? As the original etymology for these words, aetopia, decribes a place of "nowhere." In
+                our sandbox, players are not given answers but possibilities.
+            </p>
+
+            <figure class="blog-figure">
+                <img src="/blog/9-25-25/Darling.jpg" alt="Don't Worry Darling" />
+                <figcaption> Don't Worry Darling, Warner Bros. Pictures (2022)</figcaption>
+            </figure>
+
+            <p>
+                However, by weaving utopian and dystopian aesthetics into our storytelling framework, we allow players
+                to grapple with the essential question of world-building: not just what is possible, but what is
+                desirable, and at what cost.
+            </p>
+
+        </article>
+    </main>
+
+    <footer class="content-card footer-card" role="contentinfo">
+        ms design tech @ cornell
+    </footer>
+
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.153.0/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simplex-noise@2.4.0/simplex-noise.js"></script>
+    <script src="/scripts/terrain.js"></script>
+</body>
+
+</html>

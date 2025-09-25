@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>hello.world — the aesthetics of fiction</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="icon" type="image/png" href="/public/favicon.png" sizes="32x32">
+</head>
+
+<body>
+    <!-- dot-grid overlay -->
+    <div class="dot-grid" aria-hidden="true"></div>
+
+    <!-- background canvas (three.js terrain) -->
+    <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+    <!-- navigation (same as index) -->
+    <nav class="nav-container" role="navigation" aria-label="primary">
+        <ul class="nav-links">
+            <li><a href="/index.html">home</a></li>
+            <li><a href="/index.html#about">about</a></li>
+            <li><a href="/index.html#blog">blog</a></li>
+            <li><a href="/index.html#team">team</a></li>
+            <li>
+                <div class="download-btn-container">
+                    <button class="download-btn" disabled>downloads</button>
+                </div>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- main blog content -->
+    <main>
+        <article class="blog-article content-card">
+            <!-- blog title -->
+            <h1 class="blog-entry-title">the aesthetics of fiction</h1>
+            <div class="blog-meta">research update: 09/18/2025</div>
+
+            <!-- blog body -->
+            <p>
+                Every game world carries an aesthetic. A logic of images, symbols, and forms that makes it feel alive.
+                For us, aesthetics are not decoration but the foundation of meaning. They come from real cultural
+                systems: how we design money, how institutions project power, how buildings encode hierarchy, how
+                stories circulate through society. These are the raw materials we draw on to build a fictional sandbox
+                where players can invent their own narratives.They interpret conflict, and how they project themselves
+                into the narrative.
+            </p>
+
+            <!-- image with caption -->
+            <figure class="blog-figure">
+                <img src="/blog/9-18-25/Vibe.jpg" alt="Vibe" />
+            </figure>
+            <p>
+                Our aesthetic is not arbitrary. It is drawn from the very systems that shape how we see the world: law,
+                culture, technology, and national identity. By reimagining these systems inside the game, we give
+                players both a familiar grammar to build on and a critical space to reinvent it.
+            </p>
+
+            <!-- image with caption -->
+            <figure class="blog-figure">
+                <img src="/blog/9-18-25/Light.jpg" alt="Light" />
+            </figure>
+
+            <p>
+                Human societies rely on “invisible social contracts”. Things like money, law, ethics, nations, religion,
+                flags, fashion, etc. These are not natural, but constructed. They enable large-scale cooperation beyond
+                face-to-face or intimate relations. These fictions become powerful because they are accepted, often
+                unconsciously; their symbols, codes, and forms acquire legitimacy through repetition and design.
+            </p>
+
+            <!-- image with caption -->
+            <figure class="blog-figure">
+                <img src="/blog/9-18-25/Money.jpg" alt="Money" />
+            </figure>
+
+            <p>
+                Symbolism, design, visual codes help make these social fictions recognisable across contexts (time,
+                place, culture). Visual trust is built through familiar motifs (seals, typography, emblems) that signal
+                legitimacy. For example, currency design: things like official seals, signatures, standard typography,
+                images of national symbols all help people trust and identify the currency.
+            </p>
+
+            <!-- image with caption -->
+            <figure class="blog-figure">
+                <img src="/blog/9-18-25/Layers.jpg" alt="Layers" />
+            </figure>
+
+
+            <p>
+                Social fictions evolve at different speed; fashion shifts quickly, while cultural norms and institutions
+                change more slowly. Our game reflects this by allowing players to design both the fleeting (styles,
+                appearances, trends) and the enduring (laws, myths, monuments). The interplay between the two creates
+                dynamic storytelling possibilities.
+            </p>
+
+            <!-- image with caption -->
+            <figure class="blog-figure">
+                <img src="/blog/9-18-25/Chair.jpg" alt="Chair" />
+            </figure>
+
+            <p>
+                Just as blockchain, Web3, and virtual worlds create new forms of legitimacy through their aesthetics,
+                our game provides a space where players can invent their own emerging systems. What does a decentralised
+                economy look like in your dystopian city? How does virtual faith spread through symbols? We give players
+                the creative tools to define this.
+            </p>
+
+            <!-- image with caption -->
+            <figure class="blog-figure">
+                <img src="/blog/9-18-25/Stocks.jpg" alt="Stocks" />
+            </figure>
+
+            <p>
+                Every aesthetic choice reinforces or resists certain power structures. Our game is designed not just to
+                replicate existing systems, but to allow players to question them. By designing the symbols of a
+                fictional state, or rewriting the codes of morality, players engage in critique as much as creation.
+            </p>
+
+            <!-- image with caption -->
+            <figure class="blog-figure">
+                <img src="/blog/9-18-25/Mood.jpg" alt="Mood" />
+            </figure>
+
+            <p>
+                In moments when old narratives collapse and new ones emerge, symbols become a way of orientation. Our
+                sandbox offers precisely this: a stage where players use visual, cultural, and narrative cues to
+                stabilize their imagined worlds, or to dismantle them.
+            </p>
+
+            <p>
+                <strong>Adapted from:</strong> The Aesthetics of Our New Fictions. DOC, 2024.
+                https://www.doc.cc/articles/the-aesthetics-of-our-new-fictions
+            </p>
+        </article>
+    </main>
+
+    <footer class="content-card footer-card" role="contentinfo">
+        ms design tech @ cornell
+    </footer>
+
+    <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/three@0.153.0/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/simplex-noise@2.4.0/simplex-noise.js"></script>
+    <script src="/scripts/terrain.js"></script>
+</body>
+
+</html>
