@@ -9,6 +9,10 @@
 
 html { scroll-behavior: smooth; }
 
+mark{
+  background-color: rgb(228, 255, 221);
+}
+
 :root {
   /* colors */
   --color-bg: #fff;
