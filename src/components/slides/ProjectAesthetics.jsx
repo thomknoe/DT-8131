@@ -8,13 +8,13 @@ export default function ProjectAesthetics() {
       id: 1,
       title: "Frank Lloyd Wright",
       subtitle: "Broadacre City, Suburban Utopia",
-      imageSrc: "/styles/utopia.png"
+      imageSrc: "styles/utopia.png"
     },
     {
       id: 4,
       title: "Hieronymus Bosch",
       subtitle: "Garden of Earthly Delights, Painting",
-      imageSrc: "/styles/garden.png"
+      imageSrc: "styles/garden.png"
     }
   ];
 
