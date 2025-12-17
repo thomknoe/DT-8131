@@ -2,9 +2,9 @@
 
 ## Project Links
 
+- **[Web App GitHub Repository](https://github.com/thomknoe/helloworld.js)** - Source code for the web app prototype (link to be added)
 - **[Research Website](https://thomknoe.github.io/DT-8131/)** - This research presentation website
-- **[Web App Prototype](#)** - The interactive web app prototype (link to be added)
-- **[Web App GitHub Repository](#)** - Source code for the web app prototype (link to be added)
+- **[Web App Prototype](https://thomknoe.github.io/helloworld.js/)** - The interactive web app prototype (link to be added)
 
 ## helloworld.js
 
