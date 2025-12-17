@@ -1,0 +1,145 @@
+.title-buffer {
+  width: 100%;
+  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  padding: 2rem;
+  z-index: 1;
+}
+
+.title-buffer-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  max-width: 90vw;
+  pointer-events: none;
+}
+
+.title-buffer .main-title {
+  font-size: clamp(3rem, 8vw, 6rem);
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 2rem 0;
+  opacity: 0;
+  letter-spacing: 0.05em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, sans-serif;
+}
+
+.main-title.fade-in {
+  animation: fadeInTitle 2.5s ease-out forwards;
+}
+
+.title-buffer .subtitle {
+  font-size: clamp(0.9rem, 1.5vw, 1.2rem);
+  font-weight: 300;
+  color: #ffffff;
+  margin: 0;
+  opacity: 0;
+  line-height: 1.6;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: 0.02em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, sans-serif;
+}
+
+.subtitle.fade-in {
+  animation: fadeInSubtitle 2.5s ease-out forwards;
+}
+
+@keyframes fadeInTitle {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInSubtitle {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  opacity: 0;
+  animation: fadeInScrollIndicator 1.5s ease-out forwards;
+  pointer-events: none;
+}
+
+.scroll-text {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.9rem;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, sans-serif;
+}
+
+.scroll-arrow {
+  color: rgba(255, 255, 255, 0.6);
+  animation: bounceArrow 2s ease-in-out infinite;
+}
+
+.scroll-arrow svg {
+  width: 24px;
+  height: 24px;
+}
+
+@keyframes fadeInScrollIndicator {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+@keyframes bounceArrow {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .title-buffer {
+    padding: 1.5rem;
+  }
+
+  .scroll-indicator {
+    bottom: 2rem;
+  }
+
+  .scroll-text {
+    font-size: 0.8rem;
+  }
+}
+

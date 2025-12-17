@@ -1,0 +1,52 @@
+.slide-pagination {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+}
+
+.indicator-dots {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.indicator-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+
+.indicator-dot:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  transform: scale(1.2);
+}
+
+.indicator-dot.active {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 24px;
+  border-radius: 4px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .slide-pagination {
+    bottom: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .slide-pagination {
+    bottom: 0.5rem;
+  }
+}
+

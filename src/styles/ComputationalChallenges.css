@@ -1,0 +1,39 @@
+.computational-challenges-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  min-height: 0;
+}
+
+.challenges-grid-2x2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 0.75rem;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
+  max-height: 100%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .challenges-grid-2x2 {
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .computational-challenges-container {
+    padding: 0.25rem;
+  }
+
+  .challenges-grid-2x2 {
+    gap: 0.375rem;
+  }
+}
+
