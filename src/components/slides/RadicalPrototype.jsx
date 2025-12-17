@@ -2,11 +2,28 @@ import React from "react";
 
 export default function RadicalPrototype() {
   return (
-    <div style={{ color: "#ffffff", textAlign: "center" }}>
-      <h2 style={{ fontSize: "2.5rem", marginBottom: "1rem" }}>Radical Prototype</h2>
-      <p style={{ color: "rgba(255, 255, 255, 0.8)", fontSize: "1.2rem" }}>
-        Content for Radical Prototype
-      </p>
+    <div style={{ 
+      width: "100%", 
+      height: "100%", 
+      display: "flex", 
+      alignItems: "center", 
+      justifyContent: "center"
+    }}>
+      <iframe 
+        style={{
+          width: "100%",
+          height: "100%",
+          maxWidth: "100%",
+          maxHeight: "100%",
+          aspectRatio: "16 / 9"
+        }}
+        src="https://www.youtube.com/embed/8GXWMtUED08?si=E0sxcwqpyrxmVWX2" 
+        title="YouTube video player" 
+        frameBorder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerPolicy="strict-origin-when-cross-origin" 
+        allowFullScreen
+      ></iframe>
     </div>
   );
 }
