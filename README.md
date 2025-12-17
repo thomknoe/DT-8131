@@ -2,11 +2,11 @@
 
 ## Project Links
 
-- **[Web App GitHub Repository](https://github.com/thomknoe/helloworld.js)** - Source code for the web app prototype (link to be added)
+- **[Web App GitHub Repository](https://github.com/thomknoe/helloworld.js)** - Source code for the web app prototype
 - **[Research Website](https://thomknoe.github.io/DT-8131/)** - This research presentation website
-- **[Web App Prototype](https://thomknoe.github.io/helloworld.js/)** - The interactive web app prototype (link to be added)
+- **[Web App Prototype](https://thomknoe.github.io/helloworld.js/)** - The interactive web app prototype
 
-## helloworld.js
+## Summary
 
 helloworld.js is a project exploring the design of an extensible procedural kernel that empowers creators to author computational worlds through real-time interaction. The project investigates how procedural algorithms and object-oriented systems can enable applications of world-building, computational design, and creative expression. This project examines the intersection of procedural content generation, interactive 3D environments, and collaborative creation tools, drawing inspiration from games like Minecraft, Spore, and Dwarf Fortress while leveraging modern web technologies to create a lightweight, accessible platform for computational world-building. The project explores computational challenges including network capabilities for real-time interaction, lightweight browser-based execution, peer-to-peer collaboration, and universal accessibility across devices.
 
