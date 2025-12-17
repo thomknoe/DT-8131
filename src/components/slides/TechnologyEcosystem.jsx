@@ -9,14 +9,14 @@ export default function TechnologyEcosystem() {
       id: 1,
       title: "React",
       description: "UI Framework",
-      imageSrc: "/tech/react-tailwind.png",
+      imageSrc: "tech/react-tailwind.png",
       href: "https://react.dev/"
     },
     {
       id: 3,
       title: "Geotic",
       description: "Entity-Component System",
-      imageSrc: "/tech/geotic.gif",
+      imageSrc: "tech/geotic.gif",
       href: "https://github.com/ddmills/geotic"
     },
     // Row 2
@@ -24,14 +24,14 @@ export default function TechnologyEcosystem() {
       id: 4,
       title: "Vite",
       description: "Build Tool",
-      imageSrc: "/tech/vite.png",
+      imageSrc: "tech/vite.png",
       href: "https://vitejs.dev/"
     },
     {
       id: 6,
       title: "XState",
       description: "State Machines & System Logic",
-      imageSrc: "/tech/xstate.png",
+      imageSrc: "tech/xstate.png",
       href: "https://xstate.js.org/"
     },
     // Row 3
@@ -39,14 +39,14 @@ export default function TechnologyEcosystem() {
       id: 7,
       title: "Three.js",
       description: "3D World Rendering",
-      imageSrc: "/tech/threejs.png",
+      imageSrc: "tech/threejs.png",
       href: "https://threejs.org/"
     },
     {
       id: 9,
       title: "Recast/Detour",
       description: "NavMesh & Agent Pathfinding",
-      imageSrc: "/tech/recast.png",
+      imageSrc: "tech/recast.png",
       href: "https://github.com/recastnavigation/recastnavigation"
     },
     // Row 4
@@ -54,14 +54,14 @@ export default function TechnologyEcosystem() {
       id: 10,
       title: "React Flow",
       description: "Node-Based Editor",
-      imageSrc: "/tech/react-flow.png",
+      imageSrc: "tech/react-flow.png",
       href: "https://reactflow.dev/"
     },
     {
       id: 12,
       title: "JSON Rules Engine",
       description: "Procedural Logic Evaluation",
-      imageSrc: "/tech/json-rules-engine.png",
+      imageSrc: "tech/json-rules-engine.png",
       href: "https://github.com/CacheControl/json-rules-engine"
     }
   ];

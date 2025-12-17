@@ -5,7 +5,7 @@ export default function StudyOfSetting() {
   return (
     <div className="study-of-setting-container">
       <img 
-        src="/diagrams/settingConstituencies.png" 
+        src="diagrams/settingConstituencies.png" 
         alt="Study of Setting & Constituencies"
         className="setting-diagram-image"
       />

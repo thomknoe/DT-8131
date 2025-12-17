@@ -64,7 +64,7 @@ export default function ResearchMethods() {
         {/* Right side - Image */}
         <div className="research-image-section">
           <img 
-            src="/diagrams/researchMethods.png" 
+            src="diagrams/researchMethods.png" 
             alt="Research Methods Diagram"
             className="research-methods-image"
           />

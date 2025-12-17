@@ -59,7 +59,7 @@ export default function AmbientSound() {
 
   return (
     <>
-      <audio ref={audioRef} src="/ambient.m4a" preload="auto" />
+      <audio ref={audioRef} src="ambient.m4a" preload="auto" />
       <button
         className="sound-toggle"
         onClick={toggleSound}

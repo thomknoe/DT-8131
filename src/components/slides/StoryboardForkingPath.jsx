@@ -8,17 +8,17 @@ export default function StoryboardForkingPath({ onPaginationChange }) {
   const pages = [
     {
       id: 1,
-      imageSrc: "/storyboards/goodPath.png",
+      imageSrc: "storyboards/goodPath.png",
       alt: "Good Path Storyboard"
     },
     {
       id: 2,
-      imageSrc: "/storyboards/neutralPath.png",
+      imageSrc: "storyboards/neutralPath.png",
       alt: "Neutral Path Storyboard"
     },
     {
       id: 3,
-      imageSrc: "/storyboards/badPath.png",
+      imageSrc: "storyboards/badPath.png",
       alt: "Bad Path Storyboard"
     }
   ];

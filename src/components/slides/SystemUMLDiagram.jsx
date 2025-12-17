@@ -21,7 +21,7 @@ export default function SystemUMLDiagram({ onPaginationChange }) {
         {currentPage === 0 && (
           <div className="diagram-page">
             <img 
-              src="/diagrams/systemDiagram.png" 
+              src="diagrams/systemDiagram.png" 
               alt="System Diagram"
               className="diagram-image"
             />
@@ -30,7 +30,7 @@ export default function SystemUMLDiagram({ onPaginationChange }) {
         {currentPage === 1 && (
           <div className="diagram-page">
             <img 
-              src="/diagrams/UMLDiagram.png" 
+              src="diagrams/UMLDiagram.png" 
               alt="UML Diagram"
               className="diagram-image"
             />
@@ -39,7 +39,7 @@ export default function SystemUMLDiagram({ onPaginationChange }) {
         {currentPage === 2 && (
           <div className="diagram-page">
             <img 
-              src="/diagrams/sequencingDiagram.png" 
+              src="diagrams/sequencingDiagram.png" 
               alt="Sequencing Diagram"
               className="diagram-image"
             />
