@@ -94,18 +94,28 @@ export default function StateOfTheArt({ onPaginationChange }) {
 
   return (
     <div className="state-of-art-container">
-      <div className="cards-grid">
-        {getCurrentPageCards().map((card) => (
-          <ArtCard 
-            key={card.id} 
-            title={card.title} 
-            subtitle={card.subtitle}
-            description={card.description}
-            imageSrc={card.imageSrc}
-            href={card.href}
-          />
-        ))}
-      </div>
+      {Array.from({ length: totalPages }).map((_, pageIndex) => {
+        const pageCards = allCards.slice(pageIndex * 6, (pageIndex + 1) * 6);
+        return (
+          <div 
+            key={pageIndex}
+            className={`cards-page ${pageIndex === currentPage ? 'active' : ''}`}
+          >
+            <div className="cards-grid">
+              {pageCards.map((card) => (
+                <ArtCard 
+                  key={card.id} 
+                  title={card.title} 
+                  subtitle={card.subtitle}
+                  description={card.description}
+                  imageSrc={card.imageSrc}
+                  href={card.href}
+                />
+              ))}
+            </div>
+          </div>
+        );
+      })}
     </div>
   );
 }

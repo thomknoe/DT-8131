@@ -15,36 +15,27 @@ export default function SystemUMLDiagram({ onPaginationChange }) {
     }
   }, [currentPage, totalPages, onPaginationChange]);
 
+  const diagrams = [
+    { src: "diagrams/systemDiagram.png", alt: "System Diagram" },
+    { src: "diagrams/UMLDiagram.png", alt: "UML Diagram" },
+    { src: "diagrams/sequencingDiagram.png", alt: "Sequencing Diagram" }
+  ];
+
   return (
     <div className="system-uml-container">
       <div className="diagram-pages">
-        {currentPage === 0 && (
-          <div className="diagram-page">
+        {diagrams.map((diagram, index) => (
+          <div 
+            key={index} 
+            className={`diagram-page ${index === currentPage ? 'active' : ''}`}
+          >
             <img 
-              src="diagrams/systemDiagram.png" 
-              alt="System Diagram"
+              src={diagram.src} 
+              alt={diagram.alt}
               className="diagram-image"
             />
           </div>
-        )}
-        {currentPage === 1 && (
-          <div className="diagram-page">
-            <img 
-              src="diagrams/UMLDiagram.png" 
-              alt="UML Diagram"
-              className="diagram-image"
-            />
-          </div>
-        )}
-        {currentPage === 2 && (
-          <div className="diagram-page">
-            <img 
-              src="diagrams/sequencingDiagram.png" 
-              alt="Sequencing Diagram"
-              className="diagram-image"
-            />
-          </div>
-        )}
+        ))}
       </div>
     </div>
   );

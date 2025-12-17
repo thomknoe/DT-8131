@@ -7,6 +7,26 @@
   padding: 0.75rem;
   box-sizing: border-box;
   overflow: hidden;
+  position: relative;
+}
+
+.storyboard-page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+
+.storyboard-page.active {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  position: relative;
 }
 
 .storyboard-image-wrapper {

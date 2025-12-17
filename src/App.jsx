@@ -7,7 +7,6 @@ import HamburgerMenu from "./components/HamburgerMenu";
 import SlidesContainer from "./components/slides/SlidesContainer";
 import SlideContainer from "./components/slides/SlideContainer";
 import TitleBuffer from "./components/slides/TitleBuffer";
-import ThankYouBuffer from "./components/slides/ThankYouBuffer";
 import StateOfTheArt from "./components/slides/StateOfTheArt";
 import OntologyDiagram from "./components/slides/OntologyDiagram";
 import ProjectQuestion from "./components/slides/ProjectQuestion";
@@ -91,7 +90,6 @@ export default function App() {
         >
           <StoryboardForkingPath onPaginationChange={setStoryboardPagination} />
         </SlideContainer>
-        <ThankYouBuffer />
       </SlidesContainer>
     </div>
   );

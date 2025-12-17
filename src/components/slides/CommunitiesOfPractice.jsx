@@ -69,7 +69,7 @@ export default function CommunitiesOfPractice({ onPaginationChange }) {
 
   return (
     <div className="communities-of-practice-container">
-      {currentPage === 0 && (
+      <div className={`literature-page ${currentPage === 0 ? 'active' : ''}`}>
         <div className="literature-grid-3col">
           {communities.map((item) => (
             <LiteratureCard
@@ -82,8 +82,8 @@ export default function CommunitiesOfPractice({ onPaginationChange }) {
             />
           ))}
         </div>
-      )}
-      {currentPage === 1 && (
+      </div>
+      <div className={`literature-page ${currentPage === 1 ? 'active' : ''}`}>
         <div className="literature-grid-3col">
           {literature.map((item) => (
             <LiteratureCard
@@ -97,7 +97,7 @@ export default function CommunitiesOfPractice({ onPaginationChange }) {
             />
           ))}
         </div>
-      )}
+      </div>
     </div>
   );
 }
