@@ -1,7 +1,6 @@
 // src/App.jsx
 import { useState } from "react";
 import Background3D from "./components/Background3D";
-import OpeningAnimation from "./components/OpeningAnimation";
 import AmbientSound from "./components/AmbientSound";
 import HamburgerMenu from "./components/HamburgerMenu";
 import SlidesContainer from "./components/slides/SlidesContainer";
@@ -30,7 +29,6 @@ export default function App() {
   return (
     <div className="relative w-screen h-screen">
       <Background3D />
-      <OpeningAnimation />
       <HamburgerMenu />
       <AmbientSound />
       <SlidesContainer>
@@ -84,7 +82,7 @@ export default function App() {
           <RadicalPrototype />
         </SlideContainer>
         <SlideContainer 
-          title="Storyboard + Forking Path" 
+          title="Storyboard + Forking Path (Generated Using Gemini)" 
           slideNumber={13}
           pagination={storyboardPagination}
         >

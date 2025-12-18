@@ -25,14 +25,10 @@
   font-weight: 700;
   color: #ffffff;
   margin: 0 0 2rem 0;
-  opacity: 0;
+  opacity: 1;
   letter-spacing: 0.05em;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, sans-serif;
-}
-
-.main-title.fade-in {
-  animation: fadeInTitle 2.5s ease-out forwards;
 }
 
 .title-buffer .subtitle {
@@ -40,7 +36,7 @@
   font-weight: 300;
   color: #ffffff;
   margin: 0;
-  opacity: 0;
+  opacity: 1;
   line-height: 1.6;
   max-width: 800px;
   margin-left: auto;
@@ -48,28 +44,6 @@
   letter-spacing: 0.02em;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, sans-serif;
-}
-
-.subtitle.fade-in {
-  animation: fadeInSubtitle 2.5s ease-out forwards;
-}
-
-@keyframes fadeInTitle {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeInSubtitle {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
 }
 
 .scroll-indicator {

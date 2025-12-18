@@ -3,33 +3,14 @@ import "../../styles/TitleBuffer.css";
 
 export default function TitleBuffer() {
   const [showScrollIndicator, setShowScrollIndicator] = useState(false);
-  const [phase, setPhase] = useState("initial");
 
   useEffect(() => {
-    // Phase 1: Title fade in (starts immediately, takes 2.5 seconds)
-    const titleTimer = setTimeout(() => {
-      setPhase("title");
-    }, 100);
-
-    // Phase 2: Subtitle fade in (starts after title is visible, takes 2.5 seconds)
-    const subtitleTimer = setTimeout(() => {
-      setPhase("subtitle");
-    }, 2800);
-
-    // Phase 3: Hold both visible for 1.5 seconds
-    const holdTimer = setTimeout(() => {
-      setPhase("reveal");
-    }, 5500);
-
-    // Phase 4: Show scroll indicator after background fades (after 6 seconds + delay)
+    // Show scroll indicator after a short delay
     const scrollIndicatorTimer = setTimeout(() => {
       setShowScrollIndicator(true);
-    }, 7500); // 6 seconds for animation + 1.5 seconds delay
+    }, 1000);
 
     return () => {
-      clearTimeout(titleTimer);
-      clearTimeout(subtitleTimer);
-      clearTimeout(holdTimer);
       clearTimeout(scrollIndicatorTimer);
     };
   }, []);
@@ -37,16 +18,10 @@ export default function TitleBuffer() {
   return (
     <div className="title-buffer">
       <div className="title-buffer-content">
-        <h1
-          className={`main-title ${phase !== "initial" ? "fade-in" : ""}`}
-        >
+        <h1 className="main-title">
           helloworld.js
         </h1>
-        <p
-          className={`subtitle ${
-            phase === "subtitle" || phase === "reveal" ? "fade-in" : ""
-          }`}
-        >
+        <p className="subtitle">
           Towards computational design for interactive, web-based 3D
           environments using procedural algorithms and object-oriented systems for
           real-time authorship.
