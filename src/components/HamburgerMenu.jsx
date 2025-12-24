@@ -42,7 +42,6 @@ export default function HamburgerMenu() {
     }
   };
 
-  // Close menu when clicking outside
   useEffect(() => {
     if (!isOpen) return;
 

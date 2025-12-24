@@ -170,7 +170,6 @@
   flex-shrink: 0;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .card-text-overlay {
     padding: 0.625rem 0.75rem;

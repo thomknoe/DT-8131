@@ -34,7 +34,6 @@ export default function StoryboardForkingPath({ onPaginationChange }) {
     }
   };
 
-  // Notify parent of pagination state on mount and changes
   useEffect(() => {
     if (onPaginationChange) {
       onPaginationChange({

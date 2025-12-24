@@ -5,7 +5,6 @@ export default function TitleBuffer() {
   const [showScrollIndicator, setShowScrollIndicator] = useState(false);
 
   useEffect(() => {
-    // Show scroll indicator after a short delay
     const scrollIndicatorTimer = setTimeout(() => {
       setShowScrollIndicator(true);
     }, 1000);
@@ -19,7 +18,7 @@ export default function TitleBuffer() {
     <div className="title-buffer">
       <div className="title-buffer-content">
         <h1 className="main-title">
-          helloworld.js
+          Hello Worlds
         </h1>
         <p className="subtitle">
           Towards computational design for interactive, web-based 3D

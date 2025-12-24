@@ -4,7 +4,6 @@ import "../../styles/TechnologyEcosystem.css";
 
 export default function TechnologyEcosystem() {
   const technologies = [
-    // Row 1
     {
       id: 1,
       title: "React",
@@ -19,7 +18,6 @@ export default function TechnologyEcosystem() {
       imageSrc: "tech/geotic.gif",
       href: "https://github.com/ddmills/geotic"
     },
-    // Row 2
     {
       id: 4,
       title: "Vite",
@@ -34,7 +32,6 @@ export default function TechnologyEcosystem() {
       imageSrc: "tech/xstate.png",
       href: "https://xstate.js.org/"
     },
-    // Row 3
     {
       id: 7,
       title: "Three.js",
@@ -49,7 +46,6 @@ export default function TechnologyEcosystem() {
       imageSrc: "tech/recast.png",
       href: "https://github.com/recastnavigation/recastnavigation"
     },
-    // Row 4
     {
       id: 10,
       title: "React Flow",

@@ -71,7 +71,6 @@
   overflow: hidden;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .storyboard-forking-path-container {
     padding: 0.5rem;

@@ -135,7 +135,6 @@
   line-height: 1.4;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .hamburger-menu-content {
     width: 95%;

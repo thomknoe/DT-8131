@@ -70,7 +70,6 @@
   border-radius: 4px;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .slide-pagination {
     bottom: 0.75rem;

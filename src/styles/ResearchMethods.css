@@ -149,7 +149,6 @@
   border-radius: 8px;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .research-split {
     flex-direction: column;

@@ -9,17 +9,14 @@ export default function AmbientSound() {
     const audio = audioRef.current;
     if (!audio) return;
 
-    // Set up audio properties
     audio.loop = true;
-    audio.volume = 0.5; // Set to a comfortable volume level
+    audio.volume = 0.5;
 
-    // Try to play audio when component mounts
     const playAudio = async () => {
       try {
         await audio.play();
         setIsPlaying(true);
       } catch (error) {
-        // Autoplay may be blocked by browser
         console.log("Autoplay blocked, user interaction required");
         setIsPlaying(false);
       }
@@ -27,9 +24,7 @@ export default function AmbientSound() {
 
     playAudio();
 
-    // Handle audio events
     const handleEnded = () => {
-      // Shouldn't happen with loop, but just in case
       if (audio.loop) {
         audio.play();
       }

@@ -1,4 +1,3 @@
-// src/App.jsx
 import { useState } from "react";
 import Background3D from "./components/Background3D";
 import AmbientSound from "./components/AmbientSound";

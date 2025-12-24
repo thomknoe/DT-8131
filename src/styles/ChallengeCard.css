@@ -94,8 +94,6 @@
   text-transform: uppercase;
 }
 
-
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .challenge-card {
     padding: 0.875rem;

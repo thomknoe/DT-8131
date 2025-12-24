@@ -1,4 +1,3 @@
-// src/Ontology3D.jsx
 import React, { useEffect, useRef } from "react";
 import * as THREE from "three";
 
@@ -108,7 +107,6 @@ export default function Ontology3D() {
         const cols = line.split(",");
         const id = cols[0]?.trim();
         const label = cols[1]?.trim();
-        // Safely handle optional or missing connections column
         const connString = cols.slice(2).join(",").replace(/"/g, "").trim();
         const connections = connString
           ? connString.split("|").map((s) => s.trim()).filter(Boolean)
@@ -227,7 +225,6 @@ export default function Ontology3D() {
   
         placeNode(root.id);
         focusOnNode(root.id);
-        // Delay pills population to ensure DOM is ready
         setTimeout(() => populatePills(nodes), 0);
       }
   

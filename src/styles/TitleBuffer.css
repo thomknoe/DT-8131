@@ -101,7 +101,6 @@
   }
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .title-buffer {
     padding: 1.5rem;

@@ -10,7 +10,6 @@
   padding: 0;
 }
 
-/* Hide scrollbar but keep functionality */
 .slides-container::-webkit-scrollbar {
   width: 8px;
 }
@@ -28,7 +27,6 @@
   background: rgba(255, 255, 255, 0.3);
 }
 
-/* Firefox */
 .slides-container {
   scrollbar-width: thin;
   scrollbar-color: rgba(255, 255, 255, 0.2) transparent;

@@ -7,14 +7,12 @@ export default function StateOfTheArt({ onPaginationChange }) {
   const totalPages = 2;
 
   const allCards = [
-    // Page 1 (Cards 1-6)
     { title: "Minecraft", subtitle: "Mojang, Microsoft", description: "Sandbox Builder", imageSrc: "games/minecraft.png", href: "https://www.minecraft.net/", id: 1 },
     { title: "Spore", subtitle: "Maxis, EA", description: "Evolutionary Sandbox", imageSrc: "games/spore.png", href: "https://www.ea.com/games/spore", id: 2 },
     { title: "The Sims", subtitle: "Maxis, EA", description: "Character Simulator", imageSrc: "games/sims.png", href: "https://www.ea.com/games/the-sims", id: 3 },
     { title: "No Man's Sky", subtitle: "Hello Games", description: "Procedural Universe", imageSrc: "games/sky.jpg", href: "https://www.nomanssky.com/", id: 4 },
     { title: "Dwarf Fortress", subtitle: "Bay 12 Games", description: "Procedural World Simulation", imageSrc: "games/fortress.png", href: "https://www.bay12games.com/dwarves/", id: 5 },
     { title: "SimCity", subtitle: "Maxis, EA", description: "City Builder", imageSrc: "games/simcity.png", href: "https://www.ea.com/games/simcity", id: 6 },
-    // Page 2 (Cards 7-12)
     { 
       title: "Unity Engine", 
       subtitle: "Unity Technologies", 
@@ -81,7 +79,6 @@ export default function StateOfTheArt({ onPaginationChange }) {
     }
   };
 
-  // Notify parent of pagination state on mount and changes
   React.useEffect(() => {
     if (onPaginationChange) {
       onPaginationChange({

@@ -45,7 +45,6 @@
   border-radius: 8px;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .system-uml-container {
     padding: 0.375rem;

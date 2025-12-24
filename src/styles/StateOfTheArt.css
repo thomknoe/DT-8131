@@ -53,7 +53,6 @@
   overflow: hidden;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .cards-grid {
     gap: 0.5rem;

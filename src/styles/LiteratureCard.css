@@ -170,7 +170,6 @@
   flex-shrink: 0;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .literature-card-content {
     padding: 0.875rem;

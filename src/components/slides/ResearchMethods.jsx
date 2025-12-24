@@ -37,7 +37,6 @@ export default function ResearchMethods() {
   return (
     <div className="research-methods-container">
       <div className="research-split">
-        {/* Left side - Cards grid */}
         <div className="research-cards-section">
           <div className="cards-grid-2x2">
             {researchCards.map((card) => {
@@ -58,10 +57,8 @@ export default function ResearchMethods() {
           </div>
         </div>
 
-        {/* Divider line */}
         <div className="research-divider"></div>
 
-        {/* Right side - Image */}
         <div className="research-image-section">
           <img 
             src="diagrams/researchMethods.png" 

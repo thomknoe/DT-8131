@@ -14,7 +14,6 @@
   box-sizing: border-box;
 }
 
-/* Safari-specific fix to prevent viewport spanning */
 @supports (-webkit-touch-callout: none) {
   .slide-container {
     width: min(80vw, 1200px);
@@ -119,9 +118,6 @@
   z-index: 0;
 }
 
-
-
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .slide-container {
     width: 90vw;

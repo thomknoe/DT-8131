@@ -33,7 +33,6 @@
   overflow: hidden;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .tech-grid-2x4 {
     grid-template-columns: repeat(2, 1fr);

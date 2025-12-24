@@ -30,7 +30,6 @@
   color: #ffffff;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .project-question-container {
     padding: 1.5rem 2rem;

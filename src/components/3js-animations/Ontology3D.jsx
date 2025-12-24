@@ -58,7 +58,7 @@ export default function Ontology3D() {
     let currentNodeId = null;
 
     const localCSV = `id,label,connections
-A,helloworld.js,"B|C|D|E"
+A,Hello Worlds,"B|C|D|E"
 
 B,System Logic,"B1|B2|B3"
 B1,State Engine,"B1a|B1b"

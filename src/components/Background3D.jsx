@@ -1,4 +1,3 @@
-// src/components/Background3D.jsx
 import React, { useEffect, useRef } from "react";
 import * as THREE from "three";
 import { ImprovedNoise } from "three/examples/jsm/math/ImprovedNoise.js";
@@ -16,9 +15,6 @@ export default function Background3D() {
     const width = container.clientWidth || window.innerWidth;
     const height = container.clientHeight || window.innerHeight;
 
-    // ----------------------------------------------------
-    // RENDERER
-    // ----------------------------------------------------
     const renderer = new THREE.WebGLRenderer({
       antialias: true,
       alpha: true,
@@ -32,9 +28,6 @@ export default function Background3D() {
     container.appendChild(renderer.domElement);
     renderer.domElement.style.pointerEvents = "none";
 
-    // ----------------------------------------------------
-    // SCENE & CAMERA
-    // ----------------------------------------------------
     const scene = new THREE.Scene();
 
     const fogColor = new THREE.Color("#8fd8c8");
@@ -46,9 +39,6 @@ export default function Background3D() {
     camera.position.set(0, 22, 55);
     camera.lookAt(0, -6, -40);
 
-    // ----------------------------------------------------
-    // SKY — teal gradient + fog tint + high-frequency grain
-    // ----------------------------------------------------
     const skyGeo = new THREE.SphereGeometry(1100, 32, 32);
     const skyMat = new THREE.ShaderMaterial({
       side: THREE.BackSide,
@@ -79,7 +69,6 @@ export default function Background3D() {
           vec3 col = mix(bottomColor, midColor, smoothstep(0.0, 0.6, h));
           col = mix(col, topColor, smoothstep(0.6, 1.0, h));
 
-          // fog tint near horizon
           float fogAmt = smoothstep(0.0, 0.6, 1.0 - h);
           col = mix(col, fogColor, fogAmt * 0.35);
 
@@ -89,9 +78,6 @@ export default function Background3D() {
     });
     scene.add(new THREE.Mesh(skyGeo, skyMat));
 
-    // ----------------------------------------------------
-    // POSTPROCESSING — bloom slightly stronger
-    // ----------------------------------------------------
     const composer = new EffectComposer(renderer);
     composer.addPass(new RenderPass(scene, camera));
     composer.addPass(
@@ -103,15 +89,9 @@ export default function Background3D() {
       )
     );
 
-    // ----------------------------------------------------
-    // NOISE
-    // ----------------------------------------------------
     const noise = new ImprovedNoise();
     const seed = Math.random() * 100;
 
-    // ----------------------------------------------------
-    // TERRAIN — unchanged (with built-in grain)
-    // ----------------------------------------------------
     const terrainGeo = new THREE.PlaneGeometry(400, 400, 260, 260);
     terrainGeo.rotateX(-Math.PI / 2);
 
@@ -198,9 +178,6 @@ export default function Background3D() {
     const terrain = new THREE.Mesh(terrainGeo, terrainMat);
     scene.add(terrain);
 
-    // ----------------------------------------------------
-    // WATER — transparent + blue + monochrome grain
-    // ----------------------------------------------------
     const waterGeo = new THREE.PlaneGeometry(400, 400);
     waterGeo.rotateX(-Math.PI / 2);
 
@@ -264,9 +241,6 @@ export default function Background3D() {
     water.position.y = -1.2;
     scene.add(water);
 
-    // ----------------------------------------------------
-    // MOTES
-    // ----------------------------------------------------
     const moteCount = 1800;
     const moteGeo = new THREE.BufferGeometry();
     const motePositions = new Float32Array(moteCount * 3);
@@ -325,9 +299,6 @@ export default function Background3D() {
     motes.position.y = 0.3;
     scene.add(motes);
 
-    // ----------------------------------------------------
-    // ANIMATION LOOP
-    // ----------------------------------------------------
     const clock = new THREE.Clock();
     const animate = () => {
       const t = clock.getElapsedTime();
